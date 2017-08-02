@@ -9,11 +9,15 @@
     <a-scene>
         <a-assets>
             <img id="b-sunrise" src="gr-o.jpg">
+            <img id="ground" src="lavender-texture.jpg">
         </a-assets>
+
         
-        <a-sky src="#b-sunrise"></a-sky>
-        
+        <a-entity camera look-controls wasd-controls position="0 2 0" rotation="0 0 0"><a-camera></a-camera></a-entity>
+        <a-sky src="#b-sunrise">Can't show</a-sky>
+        <a-circle src="#ground" radius="100" rotation="-90 10 0"></a-circle>
+
     </a-scene>
-    
+
 </body>
 </html>
